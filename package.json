@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack serve",
+    "start": "node server.js",
+    "start_dev": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
