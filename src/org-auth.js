@@ -1,7 +1,7 @@
 import { BehaviorSubject } from "rxjs";
 
 export const auth$ = new BehaviorSubject({
-  sessionToken: '123', //JSON.parse(localStorage.getItem("session") || '{}').token,
+  sessionToken: JSON.parse(localStorage.getItem("session") || '{}').token,
   error: false,
   pending: false,
   userName: JSON.parse(localStorage.getItem("session") || '{}').userName,
